@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Enviro Car Selection</string>
+    <string name="tab_text_1">Select Your Car</string>
+    <string name="tab_text_2">Custom Car Model</string>
+    <string name="roboto_light">sans-serif-light</string>
+
+    <string name="number_picker_formatter">%02d</string>
+</resources>

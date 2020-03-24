@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="   Manufacturer"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:inputType="textAutoCorrect"
+            android:drawableLeft="@drawable/factory"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="   Model"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:inputType="textAutoCorrect"
+            android:drawableLeft="@drawable/caricon"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.skyhope.expandcollapsecardview.ExpandCollapseCard
+        android:id="@+id/fuel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Fuel Type"
+        app:title_color="#000000"
+        android:layout_marginBottom="20dp"
+        app:item_inner_view="@layout/fuel"
+        app:title_size="25sp"/>
+
+    <com.skyhope.expandcollapsecardview.ExpandCollapseCard
+        android:id="@+id/transmission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:title="Transmission Type"
+        app:title_color="#000000"
+        app:item_inner_view="@layout/transmission"
+        app:title_size="25sp"/>
+
+    <com.skyhope.expandcollapsecardview.ExpandCollapseCard
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:title="Body Type"
+        app:title_color="#000000"
+        app:item_inner_view="@layout/body"
+        app:title_size="25sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="   Engine Displacement ccm\u00B3"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:drawableLeft="@drawable/motor"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="   Construction Year"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seating Capacity"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="30dp"
+        ></TextView>
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:np_width="150dp"
+        app:np_height="100dp"
+        app:np_orientation="horizontal"
+        app:np_dividerColor="#CBC9CD"
+        app:np_formatter="@string/number_picker_formatter"
+        app:np_max="10"
+        app:np_min="1"
+        app:np_selectedTextColor="#000000"
+        app:np_textColor="#CBC9CD"
+        app:np_typeface="@string/roboto_light"
+        app:np_value="2" />
+</LinearLayout>
+</ScrollView>
